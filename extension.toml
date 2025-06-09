@@ -1,0 +1,8 @@
+id = "solid-typescript-snippets"
+name = "Solid Typescript Snippets"
+version = "0.1.0"
+schema_version = 1
+authors = ["Harry Yu"]
+description =  "A collection of useful Solid + TypeScript snippets to speed up your development."
+repository = "https://github.com/HarryYu02/zed-react-ts-snippets"
+snippets = "./snippets/tsx.json"
