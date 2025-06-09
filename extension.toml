@@ -2,7 +2,16 @@ id = "solid-typescript-snippets"
 name = "Solid Typescript Snippets"
 version = "0.1.0"
 schema_version = 1
-authors = ["Harry Yu"]
-description =  "A collection of useful Solid + TypeScript snippets to speed up your development."
-repository = "https://github.com/HarryYu02/zed-react-ts-snippets"
+authors = ["Harry Yu <harryyu02@gmail.com>"]
+description =  "Zed extension with helpful code snippets for SolidJS."
+repository = "https://github.com/HarryYu02/zed-solid-ts-snippets"
 snippets = "./snippets/tsx.json"
+license = "MIT"
+
+[extra]
+original_project = "https://github.com/solidjs-community/solid-snippets/tree/main"
+original_author = [
+    "Damian Tarawski <gthetarnav@gmail.com>",
+    "Christos Nicolaou <chris.anicolaou@yahoo.co.uk>",
+    "Ionut Gabriel Marisescu<gabriel.lavoro10@gmail.com>"
+]
