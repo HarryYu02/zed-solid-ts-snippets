@@ -193,5 +193,71 @@
       "export default ${1:${TM_FILENAME_BASE}};"
     ],
     "description": "Component extending an HTML Element. With Imports and default export"
+  },
+  "Solid Context Provider component": {
+    "prefix": "sctxp",
+    "body": [
+      "import { createContext, useContext, ParentComponent } from \"solid-js\";",
+      "import { createStore } from \"solid-js/store\";",
+      "",
+      "const defaultState = {};",
+      "",
+      "const ${1:Name}Context = createContext<[state: typeof defaultState, actions: {}]>([",
+      "  defaultState,",
+      "  {},",
+      "]);",
+      "",
+      "export const ${1/(.*)/${1:/capitalize}/}Provider: ParentComponent = (props) => {",
+      "  const [state, setState] = createStore(defaultState);",
+      "",
+      "  return (",
+      "    <${1/(.*)/${1:/capitalize}/}Context.Provider value={[state, {}]}>",
+      "      {props.children}",
+      "    </${1/(.*)/${1:/capitalize}/}Context.Provider>",
+      "  );",
+      "};",
+      "",
+      "export const use${1/(.*)/${1:/capitalize}/} = () => useContext(${1/(.*)/${1:/capitalize}/}Context);",
+      ""
+    ],
+    "description": "Solid Context Provider component"
+  },
+  "Simple createSignal": {
+    "prefix": "ssig",
+    "body": [
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});"
+    ],
+    "description": "Simple createSignal"
+  },
+  "Simple createEffect": {
+    "prefix": "seff",
+    "body": [
+      "createEffect(() => {",
+      "  const value = ${1:source}();",
+      "  $0",
+      "});"
+    ],
+    "description": "Simple createEffect"
+  },
+  "createEffect with explicit sources": {
+    "prefix": "seffon",
+    "body": [
+      "createEffect(on(${1: source}, (value, prev) => {",
+      "  $0",
+      "}));"
+    ],
+    "description": "createEffect with explicit sources"
+  },
+  "Simple createMemo": {
+    "prefix": "smemo",
+    "body": ["const ${1:value} = createMemo(() => $0);"],
+    "description": "Simple createMemo"
+  },
+  "createMemo with explicit sources": {
+    "prefix": "smemoon",
+    "body": [
+      "const ${1:value} = createMemo(on(${2:value}, (value, prev) => $0));"
+    ],
+    "description": "createMemo with explicit sources"
   }
 }
