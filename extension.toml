@@ -5,7 +5,7 @@ schema_version = 1
 authors = ["Harry Yu <harryyu02@gmail.com>"]
 description =  "Zed extension with helpful code snippets for SolidJS."
 repository = "https://github.com/HarryYu02/zed-solid-ts-snippets"
-snippets = "./snippets/typescript.json"
+snippets = "./snippets/tsx.json"
 license = "MIT"
 
 [extra]
