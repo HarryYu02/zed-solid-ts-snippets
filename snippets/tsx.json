@@ -2,7 +2,7 @@
   "Solid function component": {
     "prefix": "safc",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {",
+      "const $1: Component<{$2}> = (props) => {",
       "  $0",
       "  return <div></div>;",
       "};"
@@ -12,7 +12,7 @@
   "Solid Parent Component": {
     "prefix": "sapc",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {",
+      "const $1: ParentComponent<{$2}> = (props) => {",
       "  $0",
       "  return <div>{props.children}</div>;",
       "};"
@@ -22,7 +22,7 @@
   "Solid Flow Component": {
     "prefix": "saflc",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
+      "const $1: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
       "  $0",
       "  return <div>{props.children}</div>;",
       "};"
@@ -32,7 +32,7 @@
   "Solid Void Component": {
     "prefix": "savc",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {",
+      "const $1: VoidComponent<{$2}> = (props) => {",
       "  $0",
       "  return <div></div>;",
       "};"
@@ -44,7 +44,7 @@
     "body": [
       "import { Component } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {",
+      "const $1: Component<{$2}> = (props) => {",
       "  $0",
       "  return <div></div>;",
       "};"
@@ -56,12 +56,12 @@
     "body": [
       "import { Component } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {",
+      "const $1: Component<{$2}> = (props) => {",
       "  $0",
       "  return <div></div>;",
       "};",
       "",
-      "export default ${1:${TM_FILENAME_BASE}};"
+      "export default $1;"
     ],
     "description": "Solid function component. With Imports and default export"
   },
@@ -70,7 +70,7 @@
     "body": [
       "import { ParentComponent } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {",
+      "const $1: ParentComponent<{$2}> = (props) => {",
       "  $0",
       "  return <div>{props.children}</div>;",
       "};"
@@ -82,12 +82,12 @@
     "body": [
       "import { ParentComponent } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {",
+      "const $1: ParentComponent<{$2}> = (props) => {",
       "  $0",
       "  return <div>{props.children}</div>;",
       "};",
       "",
-      "export default ${1:${TM_FILENAME_BASE}};"
+      "export default $1;"
     ],
     "description": "Solid Parent Component. With Imports and default export"
   },
@@ -96,7 +96,7 @@
     "body": [
       "import { FlowComponent, JSX } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
+      "const $1: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
       "  $0",
       "  return <div>{props.children}</div>;",
       "};"
@@ -108,12 +108,12 @@
     "body": [
       "import { FlowComponent, JSX } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
+      "const $1: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
       "  $0",
       "  return <div>{props.children}</div>;",
       "};",
       "",
-      "export default ${1:${TM_FILENAME_BASE}};"
+      "export default $1;"
     ],
     "description": "Solid Flow Component. With Imports and default export"
   },
@@ -122,7 +122,7 @@
     "body": [
       "import { VoidComponent } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {",
+      "const $1: VoidComponent<{$2}> = (props) => {",
       "  $0",
       "  return <div></div>;",
       "};"
@@ -134,19 +134,19 @@
     "body": [
       "import { VoidComponent } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {",
+      "const $1: VoidComponent<{$2}> = (props) => {",
       "  $0",
       "  return <div></div>;",
       "};",
       "",
-      "export default ${1:${TM_FILENAME_BASE}};"
+      "export default $1;"
     ],
     "description": "Solid Void Component. With Imports and default export"
   },
   "Component extending an HTML Element": {
     "prefix": "sahc",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<",
+      "const $1: ParentComponent<",
       "  ComponentProps<\"${2:div}\"> & {",
       "    $0",
       "  }",
@@ -163,7 +163,7 @@
     "body": [
       "import { ParentComponent, splitProps, ComponentProps } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<",
+      "const $1: ParentComponent<",
       "  ComponentProps<\"${2:div}\"> & {",
       "    $0",
       "  }",
@@ -180,7 +180,7 @@
     "body": [
       "import { ParentComponent, splitProps, ComponentProps } from \"solid-js\";",
       "",
-      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<",
+      "const $1: ParentComponent<",
       "  ComponentProps<\"${2:div}\"> & {",
       "    $0",
       "  }",
@@ -190,7 +190,7 @@
       "  return <${2:div} {...attrs}>{props.children}</${2:div}>;",
       "};",
       "",
-      "export default ${1:${TM_FILENAME_BASE}};"
+      "export default $1;"
     ],
     "description": "Component extending an HTML Element. With Imports and default export"
   },
@@ -207,17 +207,17 @@
       "  {},",
       "]);",
       "",
-      "export const ${1/(.*)/${1:/capitalize}/}Provider: ParentComponent = (props) => {",
+      "export const ${1:Name}Provider: ParentComponent = (props) => {",
       "  const [state, setState] = createStore(defaultState);",
       "",
       "  return (",
-      "    <${1/(.*)/${1:/capitalize}/}Context.Provider value={[state, {}]}>",
+      "    <${1:Name}Context.Provider value={[state, {}]}>",
       "      {props.children}",
-      "    </${1/(.*)/${1:/capitalize}/}Context.Provider>",
+      "    </${1:Name}Context.Provider>",
       "  );",
       "};",
       "",
-      "export const use${1/(.*)/${1:/capitalize}/} = () => useContext(${1/(.*)/${1:/capitalize}/}Context);",
+      "export const use${1:Name} = () => useContext(${1:Name}Context);",
       ""
     ],
     "description": "Solid Context Provider component"
@@ -225,7 +225,7 @@
   "Simple createSignal": {
     "prefix": "ssig",
     "body": [
-      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});"
+      "const [${1:signal}, set${2:Signal}] = createSignal(${3:initialValue});"
     ],
     "description": "Simple createSignal"
   },
