@@ -3,7 +3,7 @@ Solid Typescript snippets
 
 A Zed-version of [solid-snippets](https://github.com/solidjs-community/solid-snippets/tree/main)
 
-# Installation
+## Installation
 
 1. Clone the repo
 ```bash
@@ -14,7 +14,7 @@ git clone https://github.com/HarryYu02/zed-solid-ts-snippets.git
 
 3. Click "Install Dev Extension" > Select your cloned repo
 
-# Supported snippets
+## Supported snippets
 
 | Prefix    | Description                            |
 | --------- | -------------------------------------- |
@@ -41,6 +41,6 @@ git clone https://github.com/HarryYu02/zed-solid-ts-snippets.git
 | `smemoon` | `createMemo(on(...))` variant          |
 
 
-# Contributing
+## Contributing
 
 Any contributions are welcomed!
