@@ -5,6 +5,8 @@ A Zed-version of [solid-snippets](https://github.com/solidjs-community/solid-sni
 
 ## Installation
 
+> Update: zed-solid-ts-snippets is officially published on the Zed extension store! You can now simply enable it in the Zed app.
+
 1. Clone the repo
 ```bash
 git clone https://github.com/HarryYu02/zed-solid-ts-snippets.git
